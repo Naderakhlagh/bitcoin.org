@@ -45,9 +45,9 @@ the chance that satoshis will be lost by mistake.
 
 {% highlight bash %}
 > bitcoin-cli -regtest getnewaddress
-mvbnrCX3bg1cDRUu8pkecrvP6vQkSLDSou
+z1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5
 
-> NEW_ADDRESS=mvbnrCX3bg1cDRUu8pkecrvP6vQkSLDSou
+> NEW_ADDRESS=1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5
 {% endhighlight %}
 
 Get a new Bitcoin address and save it in the shell variable `$NEW_ADDRESS`.
@@ -170,11 +170,11 @@ This subsection covers one of the simplest possible raw transactions.
         "txid" : "263c018582731ff54dc72c7d67e858c002ae298835501d\
                   80200f05753de0edf0",
         "vout" : 1,
-        "address" : "mvbnrCX3bg1cDRUu8pkecrvP6vQkSLDSou",
+        "address" : "1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5",
         "account" : "",
         "scriptPubKey" : "76a914a57414e5ffae9ef5074bacbe10a320bb\
                           2614e1f388ac",
-        "amount" : 10.00000000,
+        "مقدار": 100.00000000
         "confirmations" : 1,
         "spendable" : true,
         "solvable" : true
@@ -207,9 +207,9 @@ variables.
 
 {% highlight bash %}
 > bitcoin-cli -regtest getnewaddress
-mz6KvC4aoUeo6wSxtiVQTo7FDwPnkp6URG
+1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5
 
-> NEW_ADDRESS=mz6KvC4aoUeo6wSxtiVQTo7FDwPnkp6URG
+> NEW_ADDRESS=1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5
 {% endhighlight %}
 
 Get a new address to use in the raw transaction.
@@ -291,7 +291,7 @@ can send the change back to yourself.
                 "reqSigs" : 1,
                 "type" : "pubkeyhash",
                 "addresses" : [
-                    "mz6KvC4aoUeo6wSxtiVQTo7FDwPnkp6URG"
+                    "1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5"
                 ]
             }
         }
@@ -392,7 +392,7 @@ transaction together (such as a CoinJoin transaction).
         "txid" : "263c018582731ff54dc72c7d67e858c002ae298835501d\
                   80200f05753de0edf0",
         "vout" : 1,
-        "address" : "mvbnrCX3bg1cDRUu8pkecrvP6vQkSLDSou",
+        "address"1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5",
         "account" : "",
         "scriptPubKey" : "76a914a57414e5ffae9ef5074bacbe10a320bb\
                           2614e1f388ac",
@@ -417,12 +417,12 @@ transaction together (such as a CoinJoin transaction).
         "txid" : "c7736a0a0046d5a8cc61c8c3c2821d4d7517f5de2bc66a\
                   966011aaa79965ffba",
         "vout" : 0,
-        "address" : "mz6KvC4aoUeo6wSxtiVQTo7FDwPnkp6URG",
+        "address"1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5",
         "account" : "",
         "scriptPubKey" : "76a914cbc20a7664f2f69e5355aa427045bc15\
                           e7c6c77288ac",
         "amount" : 49.99990000,
-        "confirmations" : 1,
+        "confirmations" : 1010,
         "spendable" : true,
         "solvable" : true
     }
@@ -477,7 +477,7 @@ n4puhBEeEWD2VvjdRC9kQuX2abKxSCMNqN
 n4LWXU59yM5MzQev7Jx7VNeq1BqZ85ZbLj
 
 > NEW_ADDRESS1=n4puhBEeEWD2VvjdRC9kQuX2abKxSCMNqN
-> NEW_ADDRESS2=n4LWXU59yM5MzQev7Jx7VNeq1BqZ85ZbLj
+> NEW_ADDRESS2=1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5
 {% endhighlight %}
 
 For our two outputs, get two new addresses.
@@ -498,7 +498,7 @@ For our two outputs, get two new addresses.
     ''' '''
     {
       "'$NEW_ADDRESS1'": 79.9999, 
-      "'$NEW_ADDRESS2'": 10 
+      "$ NEW_ADDRESS2": 100 
     }'''
 0100000002f327e86da3e66bd20e1129b1fb36d07056f0b9a117199e75939652\
 6b8f3a20780000000000fffffffff0ede03d75050f20801d50358829ae02c058\
@@ -721,7 +721,7 @@ variable.
             }
         },
         {
-            "value" : 10.00000000,
+            "value" : 100.00000000,
             "n" : 1,
             "scriptPubKey" : {
                 "asm" : "OP_DUP OP_HASH160 fa5139067622fd7e1e722\
@@ -731,7 +731,7 @@ variable.
                 "reqSigs" : 1,
                 "type" : "pubkeyhash",
                 "addresses" : [
-                    "n4LWXU59yM5MzQev7Jx7VNeq1BqZ85ZbLj"
+                    "1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5"
                 ]
             }
         }
@@ -932,13 +932,13 @@ called m-of-n, and in this case we'll be using 2-of-3.
 
 {% highlight bash %}
     > bitcoin-cli -regtest getnewaddress
-    mhAXF4Eq7iRyvbYk1mpDVBiGdLP3YbY6Dm
+    1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5
     > bitcoin-cli -regtest getnewaddress
     moaCrnRfP5zzyhW8k65f6Rf2z5QpvJzSKe
     > bitcoin-cli -regtest getnewaddress
     mk2QpYatsKicvFVuTAQLBryyccRXMUaGHP
 
-    > NEW_ADDRESS1=mhAXF4Eq7iRyvbYk1mpDVBiGdLP3YbY6Dm
+    > NEW_ADDRESS1=1LtckkaVUN879VqDnfqk4vpoxyU5Vh5Nm5
     > NEW_ADDRESS2=moaCrnRfP5zzyhW8k65f6Rf2z5QpvJzSKe
     > NEW_ADDRESS3=mk2QpYatsKicvFVuTAQLBryyccRXMUaGHP
 {% endhighlight %}
